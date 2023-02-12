@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { FontAwesome, Entypo, Foundation } from '@expo/vector-icons';
+import { FontAwesome, MaterialIcons, Foundation, FontAwesome5 } from '@expo/vector-icons';
 import {
   useFonts,
   MedievalSharp_400Regular,
@@ -54,7 +54,7 @@ const BottomStack = () => {
         options={{
           tabBarLabel: 'Timer',
           tabBarIcon: ({ color }) => (
-            <Entypo name="stopwatch" size={24} color={color} />
+            <FontAwesome name="hourglass-end" size={24} color={color} />
           ),
         }}
       />
@@ -64,7 +64,7 @@ const BottomStack = () => {
         options={{
           tabBarLabel: 'Regole',
           tabBarIcon: ({ color }) => (
-            <FontAwesome name="leanpub" size={26} color={color} />
+            <FontAwesome5 name="scroll" size={24} color={color} />
           ),
         }}
       />
@@ -75,7 +75,7 @@ const BottomStack = () => {
         options={{
           tabBarLabel: 'Arte',
           tabBarIcon: ({ color }) => (
-            <FontAwesome name="key" size={26} color={color} />
+            <MaterialIcons name="color-lens" size={30} color={color} />
           ),
         }}
       />

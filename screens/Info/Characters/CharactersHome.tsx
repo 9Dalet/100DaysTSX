@@ -14,6 +14,7 @@ import { StatusBar } from 'expo-status-bar';
 import Constants from 'expo-constants';
 import CustomBackHeader from '../../../components/info/CustomBackHeader';
 import Animated, { ZoomInEasyDown, SlideInDown, FadeInDown } from 'react-native-reanimated';
+import { FlatGrid } from 'react-native-super-grid';
 
 import Characters from '../../../data/Characters';
 import BlackCard from '../../../components/info/BlackCard';
@@ -46,16 +47,13 @@ const CharacterHome = ({ navigation, route }: any) => {
         blurRadius={20}>
       <CustomBackHeader title="Personaggi" onPress={() => { navigation.goBack() }} />
       <Animated.View style={styles.animatedView} entering={FadeInDown.duration(500)}>
-        <FlatList
-          data={data}
-          renderItem={renderItem}
-          showsVerticalScrollIndicator={false}
-          numColumns={2}
-          contentContainerStyle={{
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        />
+      <FlatGrid
+            itemDimension={120}
+            renderItem={renderItem}
+            spacing={10}
+            data={data}
+            contentContainerStyle={{justifyContent: 'space-between', alignItems: 'center'}}
+          />
       </Animated.View>
       </ImageBackground>
     </SafeAreaView>

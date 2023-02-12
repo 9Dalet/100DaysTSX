@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
         paddingHorizontal: 5,
-        marginBottom: 10
+        //marginBottom: 10
     },
     headerText: {
         color: '#e3dac9',

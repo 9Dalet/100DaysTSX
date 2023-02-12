@@ -20,7 +20,7 @@ const colors = {
     text: '#e3dac9',
 };
 
-const timers = [5, 10, 15, 20, 25, 30]
+const timers = [30]
 //[...Array(13).keys()].map((i) => (i === 0 ? 1 : i * 5));
 const ITEM_SIZE = width * 0.38;
 const ITEM_SPACING = (width - ITEM_SIZE) / 2;

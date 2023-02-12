@@ -29,7 +29,7 @@ const LoreHome = ({ navigation, route }: any) => {
     MedievalSharp_400Regular,
     Almendra_400Regular,
   });
-  
+
   if (!fontsLoaded) {
     return null;
   }
@@ -41,12 +41,12 @@ const LoreHome = ({ navigation, route }: any) => {
         source={require('../../../assets/black.jpg')}
         style={StyleSheet.absoluteFillObject}
         blurRadius={15}>
+        <CustomBackHeader title="Trama" onPress={() => { navigation.goBack() }} />
         <ScrollView style={styles.scroll}>
-          <CustomBackHeader title="Trama" onPress={() => { navigation.goBack() }} />
           <View
             style={styles.padding}>
             <View style={styles.textContainer}>
-              <Animated.Text entering={FadeInDown.duration(500)} style={[styles.loreText, {fontFamily: 'Almendra_400Regular'}]}>
+              <Animated.Text entering={FadeInDown.duration(500)} style={[styles.loreText, { fontFamily: 'Almendra_400Regular' }]}>
                 {data.lore}
               </Animated.Text>
             </View>

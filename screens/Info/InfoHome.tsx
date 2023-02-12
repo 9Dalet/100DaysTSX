@@ -23,28 +23,28 @@ const InfoHomePage = ({ navigation }: any) => {
         blurRadius={10}>
         <ScrollView contentContainerStyle={styles.scrollView}>
           <AnimatedCard
-            source={require('../../assets/65089-book-search.json')}
+            source={require('../../assets/33522-bookgirl.json')}
             text={data[0].name}
             onPress={() => {
               navigation.navigate('Trama');
             }}
           />
           <AnimatedCard
-            source={require('../../assets/62156-dudes.json')}
+            source={require('../../assets//22807-people-morph-flow.json')}
             text={data[1].name}
             onPress={() => {
               navigation.navigate('Giocatori');
             }}
           />
           <AnimatedCard
-            source={require('../../assets/83055-ghosts-joke.json')}
+            source={require('../../assets/80482-monster-4.json')}
             text={data[2].name}
             onPress={() => {
               navigation.navigate('Shinigami');
             }}
           />
           <AnimatedCard
-            source={require('../../assets/126772-pentagram.json')}
+            source={require('../../assets//4151-jack-of-diamond-animation.json')}
             text={data[3].name}
             onPress={() => {
               navigation.navigate('Destino');

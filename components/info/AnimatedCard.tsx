@@ -31,8 +31,8 @@ const CustomCard: React.FC<Props> = ({source, text, onPress}) => {
         <LottieView
           source={source}
           autoPlay={true}
-          loop={false}
-          duration={2000}
+          loop={true}
+          //duration={2000}
         />
       </View>
       <View
