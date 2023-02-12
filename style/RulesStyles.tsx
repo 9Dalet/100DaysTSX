@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     },
     image: {
         resizeMode: 'contain',
-        height: 300,
+        height: width > 380 ? PixelRatio.roundToNearestPixel(300) : PixelRatio.roundToNearestPixel(250),
         width: '100%'
     },
     CaselleCard: {
