@@ -22,7 +22,9 @@ const styles = StyleSheet.create({
     },
     row: {
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        width: width /2,
+        alignItems: 'center'
     },
     center: {
         alignItems: 'center',
@@ -64,7 +66,7 @@ const styles = StyleSheet.create({
     },
     textcard: {
         color: '#e3dac9',
-        fontSize: 18,
+        fontSize: width > 380 ? PixelRatio.roundToNearestPixel(18) : PixelRatio.roundToNearestPixel(17),
         //fontWeight: 'bold',
         textAlign: 'center',
     },
@@ -130,7 +132,7 @@ const styles = StyleSheet.create({
     },
     introText1: {
         color: '#e3dac9',
-        fontSize: 30,
+        fontSize: width > 380 ? PixelRatio.roundToNearestPixel(30) : PixelRatio.roundToNearestPixel(27),
         marginBottom: 5,
          textAlign: 'center'
     },
@@ -155,7 +157,7 @@ const styles = StyleSheet.create({
     },
     text: {
         color: '#e3dac9',
-        fontSize: 18,
+        fontSize: width > 380 ? PixelRatio.roundToNearestPixel(18) : PixelRatio.roundToNearestPixel(16),
     },
     largeCardNameView: {
         borderBottomWidth: 2,
@@ -165,7 +167,7 @@ const styles = StyleSheet.create({
     },
     largeCardName: {
         color: '#e3dac9',
-        fontSize: 22,
+        fontSize: width > 380 ? PixelRatio.roundToNearestPixel(26) : PixelRatio.roundToNearestPixel(22),
         textAlign: 'center',
         //fontWeight: 'bold',
     },
@@ -190,7 +192,7 @@ const styles = StyleSheet.create({
         borderBottomColor: '#e3dac9',
     },
     smallCard: {
-        width: 150,
+        width: '80%',
         backgroundColor: 'rgba(34,35,40,0.5)',
         borderRadius: 10,
         justifyContent: 'center',
@@ -198,12 +200,12 @@ const styles = StyleSheet.create({
     },
     smallCardText: {
         color: '#e3dac9',
-        fontSize: 18,
+        fontSize: width > 380 ? PixelRatio.roundToNearestPixel(18) : PixelRatio.roundToNearestPixel(15),
         alignSelf: 'center',
     },
     smallCardNameText: {
         color: '#e3dac9',
-        fontSize: 22,
+        fontSize: width > 380 ? PixelRatio.roundToNearestPixel(22) : PixelRatio.roundToNearestPixel(20),
         alignSelf: 'center',
         textAlign: 'center',
         //fontWeight: 'bold',

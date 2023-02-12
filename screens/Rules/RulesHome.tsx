@@ -42,6 +42,7 @@ const RulesHome = ({ navigation }: any) => {
             <View
               style={styles.row}>
               <SmallCard name={data[1].name} text={data[1].text} />
+              <View style={{width: '10%', height: '100%'}} />
               <SmallCard name={data[2].name} text={data[2].text} />
             </View>
             <View style={styles.center}>
