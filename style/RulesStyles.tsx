@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { Dimensions, PixelRatio, StyleSheet } from 'react-native';
 import Constants from 'expo-constants';
-
+const {width, height} = Dimensions.get('screen');
 
 const styles = StyleSheet.create({
     container: {
@@ -81,11 +81,11 @@ const styles = StyleSheet.create({
     rowContainer: {
         flex: 1,
         flexDirection: 'row',
-        justifyContent: 'space-evenly',
+        justifyContent: 'space-between',
     },
     innerCard: {
-        height: 100,
-        width: 100,
+        height: width > 380 ? 100 : 90,
+        width: width > 380 ? 100 : 90,
         backgroundColor: '#333',
         borderRadius: 10,
     },
@@ -136,12 +136,14 @@ const styles = StyleSheet.create({
     },
     introText2: {
         color: '#e3dac9',
-        fontSize: 18,
+        fontSize: PixelRatio.roundToNearestPixel(18),
         alignSelf: 'center',
     },
     introImage: {
-        height: 100,
-        width: 110
+        height: width > 380 ? PixelRatio.roundToNearestPixel(100) : PixelRatio.roundToNearestPixel(90),
+        width: width > 380 ? PixelRatio.roundToNearestPixel(100) : PixelRatio.roundToNearestPixel(90), 
+        alignSelf: 'center',
+        //backgroundColor: 'red',
     },
     largeCard: {
         width: '100%',

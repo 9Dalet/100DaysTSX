@@ -21,7 +21,7 @@ const RulesNavigation = () => {
         ...TransitionPresets.ModalPresentationIOS,
       }}>
       <Stack.Screen name="Home" component={RulesHome} />
-      <Stack.Screen name="Detail" component={RulesDetail} />
+      <Stack.Screen name="Details" component={RulesDetail} />
     </Stack.Navigator>
   );
 };

@@ -57,13 +57,13 @@ const RulesHome = ({ navigation }: any) => {
             name={data[6].name}
             image1={caselle[0].image}
             text1={data[6].text1}
-            onPress1={() => { navigation.navigate('Detail', { text: caselle[0].text, image: caselle[0].image }) }}
+            onPress1={() => { navigation.navigate('Details', { text: caselle[0].text, image: caselle[0].image }) }}
             image2={caselle[1].image}
             text2={data[6].text2}
-            onPress2={() => { navigation.navigate('Detail', { text: caselle[1].text, image: caselle[1].image }) }}
+            onPress2={() => { navigation.navigate('Details', { text: caselle[1].text, image: caselle[1].image }) }}
             image3={caselle[2].image}
             text3={data[6].text3}
-            onPress3={() => { navigation.navigate('Detail', { text: caselle[2].text, image: caselle[2].image }) }}
+            onPress3={() => { navigation.navigate('Details', { text: caselle[2].text, image: caselle[2].image }) }}
           />
           <Divider />
           <LargeCard name={data[7].name} text={data[7].text} />

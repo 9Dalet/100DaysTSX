@@ -1,6 +1,10 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { FontAwesome, Entypo, Foundation } from '@expo/vector-icons';
+import {
+  useFonts,
+  MedievalSharp_400Regular,
+} from '@expo-google-fonts/medievalsharp';
 
 //local files
 import Timer3 from '../Timer/Timer3';
@@ -11,6 +15,15 @@ import RulesNavigation from '../Rules/RulesNavigation';
 const Tab = createBottomTabNavigator();
 
 const BottomStack = () => {
+
+  let [fontsLoaded] = useFonts({
+    MedievalSharp_400Regular,
+  });
+  
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
     <Tab.Navigator
       initialRouteName="Rules"
