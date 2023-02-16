@@ -17,10 +17,10 @@ import {
 } from '@expo-google-fonts/medievalsharp';
 import { Almendra_400Regular } from '@expo-google-fonts/almendra';
 //local files
-import CustomBackHeader from '../../../../components/info/CustomBackHeader';
-import styles from '../../../../style/InfoStyles';
+import CustomBackHeader from '../../../components/info/CustomBackHeader';
+import styles from '../../../style/InfoStyles';
 //data
-import LoreData from '../../../../data/LoreData';
+import LoreData from '../../../data/LoreData';
 
 const LoreHome = ({ navigation, route }: any) => {
   const data = LoreData;

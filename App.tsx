@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 //local files
-import AppNavigation from './ui/screens/navigation/AppNavigation';
+import AppNavigation from './screens/Navigation/AppNavigation';
 
 
 const App = () => {

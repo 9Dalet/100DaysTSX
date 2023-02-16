@@ -7,7 +7,7 @@ import 'react-native-gesture-handler';
 
 //local files
 import InfoHome from './InfoHome';
-import LoreHome from './Lore/LoreHome';
+import LoreHome from '../../../screens/Info/Lore/LoreHome';
 import CharactersNavigation from './Characters/CharactersNavigation';
 import ShinigamiNavigation from './Shinigami/ShinigamiNavigation';
 import DestinyNavigation from './Destiny/DestinyNavigation';
