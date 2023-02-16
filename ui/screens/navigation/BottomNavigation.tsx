@@ -7,7 +7,7 @@ import {
 } from '@expo-google-fonts/medievalsharp';
 
 //local files
-import Timer3 from '../Timer/Timer3';
+import Timer3 from '../../ui/screens/timer/Timer3';
 import InfoNavigation from '../Info/InfoNavigation';
 import RulesNavigation from '../Rules/RulesNavigation';
 

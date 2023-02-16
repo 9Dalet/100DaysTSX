@@ -13,10 +13,10 @@ import {
 import { StatusBar } from 'expo-status-bar';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 
-import Shinigami from '../../../data/Shinigami';
-import BlackCard from '../../../components/info/BlackCard';
-import CustomBackHeader from '../../../components/info/CustomBackHeader';
-import styles from '../../../style/InfoStyles';
+import Shinigami from '../../../../data/Shinigami';
+import BlackCard from '../../../../components/info/BlackCard';
+import CustomBackHeader from '../../../../components/info/CustomBackHeader';
+import styles from '../../../../style/InfoStyles';
 
 const ShinigamiHome = ({ navigation, route }: any) => {
   const data = Shinigami;

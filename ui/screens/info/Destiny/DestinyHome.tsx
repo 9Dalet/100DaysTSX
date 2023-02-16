@@ -11,8 +11,8 @@ import {
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import Constants from 'expo-constants';
-import CustomBackHeader from '../../../components/info/CustomBackHeader';
-import styles from '../../../style/InfoStyles';
+import CustomBackHeader from '../../../../components/info/CustomBackHeader';
+import styles from '../../../../style/InfoStyles';
 
 const DestinyHome = ({ navigation, route }: any) => {
   return (

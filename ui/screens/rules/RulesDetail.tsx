@@ -1,8 +1,8 @@
 import React from 'react';
 import { SafeAreaView, View, Image, Text, StyleSheet, ScrollView } from 'react-native';
 
-import ModalDivider from '../../components/rules/ModalDivider';
-import styles from '../../style/RulesStyles';
+import ModalDivider from '../../../components/rules/ModalDivider';
+import styles from '../../../style/RulesStyles';
 import {
   useFonts,
   MedievalSharp_400Regular,

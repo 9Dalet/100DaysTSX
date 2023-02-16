@@ -12,14 +12,14 @@ import {
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import Constants from 'expo-constants';
-import CustomBackHeader from '../../../components/info/CustomBackHeader';
+import CustomBackHeader from '../../../../components/info/CustomBackHeader';
 import Animated, { ZoomInEasyDown, SlideInDown, FadeInDown } from 'react-native-reanimated';
 import { FlatGrid } from 'react-native-super-grid';
 
-import Characters from '../../../data/Characters';
-import BlackCard from '../../../components/info/BlackCard';
-import styles from '../../../style/InfoStyles';
-import CustomHeader from '../../../components/rules/CustomHeader';
+import Characters from '../../../../data/Characters';
+import BlackCard from '../../../../components/info/BlackCard';
+import styles from '../../../../style/InfoStyles';
+import CustomHeader from '../../../../components/rules/CustomHeader';
 
 const CharacterHome = ({ navigation, route }: any) => {
   const data = Characters;

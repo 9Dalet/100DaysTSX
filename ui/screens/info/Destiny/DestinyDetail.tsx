@@ -10,7 +10,7 @@ import {
   ScrollView
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import styles from '../../../style/InfoStyles';
+import styles from '../../../../style/InfoStyles';
 
 const DestinyHome = ({ navigation, route }: any) => {
   return (
